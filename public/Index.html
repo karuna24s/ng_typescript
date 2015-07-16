@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html ng-app="ngKicks">
+    <head>
+        <title>ng-Kicks</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>My Sneakers</h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <div ng-view></div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/angular.js"></script>
+        <script src="scripts/angular-route.js"></script>
+        <script src="app/app.routes.js"></script>
+        <script src="app/app.module.js"></script>
+        <script src="app/services/sneakerService.js"></script>
+        <script src="app/controllers/sneakerController.js"></script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+﻿<button class="btn btn-primary" ng-click="getSneakers()">Display Sneakers</button>
+
+<table class="table table-hover" data-ng-show="sneakers">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Brand</th>
+			<th>Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="sneaker in sneakers">
+			<td>{{ sneaker.name }}</td>
+			<td>{{ sneaker.brand }}</td>
+			<td>{{ sneaker.price | currency }}</td>
+		</tr>
+	</tbody>
+</table>
